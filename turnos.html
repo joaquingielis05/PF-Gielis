@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JG Hair Studio</title>
+</head>
+<body>
+    <!-- Barra nav -->
+    <nav class="navegacion">
+        <div class="logo_container">
+            <img src="./assets/img/logo.png" alt="logoJG" class="logo">
+            <span>JG Hair Studio</span>
+        </div>
+        <!-- menu mobile -->
+        <input type="checkbox" id="check_menu">
+        
+        <ul class="navegacionNav">
+            <li class="navegacionItem"><a class="colorNav" href="./index.html">Inicio</a></li>
+            <li class="navegacionItem"><a class="colorNav" href="./servicios.html">Servicios</a></li>
+            <li class="navegacionItem"><a class="colorNav" href="./productos.html">Productos</a></li>
+            <li class="navegacionItem"><a class="colorNav" href="./turnos.html">Turnos</a></li>
+            <li class="navegacionItem"><a class="colorNav" href="./contacto.html">Contacto</a></li>
+        </ul>
+        <label class="colorNav" for="check_menu"><i class="bx bx-menu"></i></label>
+    </nav>
+
+    <header>
+      <img class="agendaTuTurno" src="./assets/img/agendaTuTurno.png" alt="agendaTuTurno">
+    </header>
+
+    <!-- Formulario -->
+<section class="formulario">
+  <div class="seccionTurnos">
+<div>
+  <select class="form-select form-select-sm" aria-label="Small select">
+    <option selected="">Atenderse con:</option>
+    <option value="1">Alejandro</option>
+    <option value="2">Martín</option>
+    <option value="3">Lucas</option>
+  </select>
+</div>
+  <input class="fecha" type="date" />
+  <input class="fecha" type="time">
+</div>
+<div>
+  <p class="servicio">Seleccione servicios:</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="formCheckDefault">
+    <label class="form-check-label" for="formCheckDefault">Corte</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="formCheckChecked" checked="">
+    <label class="form-check-label" for="formCheckChecked">Barba</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="formCheckDefault">
+    <label class="form-check-label" for="formCheckDefault">Tintura</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="formCheckChecked" checked="">
+    <label class="form-check-label" for="formCheckChecked">Limpieza de cutis</label>
+  </div>
+</div>
+<button type="button" class="btn btn-primary solicitar">Solicitar</button>
+</section>
+    <footer>
+        <section class="pieDePagina">
+            <h1>NUESTRAS REDES</h1>
+            <ul class="iconos">
+                <li class="icono">
+                  <a href="https://www.facebook.com" target="_blank"><i class="bx bxl-facebook"></i></a>
+                </li>
+                <li class="icono">
+                  <a href="https://www.instagram.com" target="_blank"><i class="bx bxl-instagram"></i></a>
+                </li>
+                <li class="icono">
+                  <a href="https://www.tiktok.com/es/" target="_blank"><i class="bx bxl-tiktok"></i></a>
+                </li>
+                <li class="icono">
+                  <a href="https://www.youtube.com" target="_blank"><i class="bx bxl-youtube"></i></a>
+                </li>
+              </ul>
+        </section>
+    </footer>
+
+<!-- Bootstrap JS -->
+<script src="./js/popper.js"></script>
+<script src="./js/bootstrap.js"></script>
+</body>
+</html>
