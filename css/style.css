@@ -257,6 +257,13 @@ section.pieDePagina {
     margin-left: 1%;
 }
 
+.galeriaTexto {
+    color: white;
+    font-family: LinLibertine_RB;
+} 
+
+
+
 /* media queries */
 @media (max-width: 1230px){
     nav.navegacion {
