@@ -267,6 +267,41 @@ section.pieDePagina {
     height: 730px;
 }
 
+.productos {
+    display:flex;
+    margin: 1%;
+    justify-content:center
+    
+}
+
+.productosImg {
+    height: 400px;
+    width: 400px;
+}
+
+.tarjeta {
+    width: 30%;
+    margin: 5px;
+    font-family: LinLibertine_R;
+    transition: all .42s;
+    display: flex;
+    
+
+}
+
+.tarjeta:hover {
+    transform: scale(1.025);
+    
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.comprar {
+    font-family: LinLibertine_R;
+}
 
 
 /* media queries */
@@ -416,7 +451,68 @@ section.pieDePagina {
         height: 100%;
         
     }
-    .galeriaTamano {
-        height: 100%;
+}
+
+@media (max-width: 1513px){
+    .productosImg {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 1474px){
+    .productosImg {
+        height: 300px;
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 1292px){
+    .productosImg {
+        height: 250px;
+        width: 250px;
+    }
+    .tarjeta{
+        width: 25%;
+        height: 720px;
+    }
+}
+
+@media (max-width: 1134px){
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tarjeta {
+        width: 450px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 929px){
+    .tarjeta {
+        width: 400px;
+        height: 590px;
+    }
+}
+
+@media (max-width: 827px){
+    .tarjeta {
+        width: 350px;
+        height: 540px;
+    }
+    p {
+        font-size: 15px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 723px){
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
