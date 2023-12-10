@@ -52,7 +52,7 @@ nav.navegacion {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    z-index: 999;
 }
 
 .logo {
@@ -241,11 +241,13 @@ section.pieDePagina {
     background-color: #524829;
     margin-top: 1%;
     border-color: #524829;
+    transition: all .5s;
 }
 
 .solicitar:hover {
     background-image: radial-gradient(circle, #bca65e, #a08d50, #857543, #6b5e36, #524829);
     border-color: #bca65e;
+    transition: all .5s;
 }
 
 
@@ -258,6 +260,7 @@ section.pieDePagina {
     margin-left: 1%;
 }
 
+
 .servicio {
     font-family: LinLibertine_R;
     transition: all .42s;
@@ -266,23 +269,27 @@ section.pieDePagina {
     border-color: #524829;
 }
 
-.servicio:hover {
+.servicio:hover{
     transform: scale(1.017);
-    position: static;
+    .servicioBody{
+        color: #bca65e;
+    }
 }
+
+
 
 .servicioBody {
     background-color: #141414;
     color: white;
-
 }
+
 
 .productos {
     display:flex;
     margin: 1%;
     justify-content:center
-    
 }
+
 
 .productosImg {
     height: 400px;
@@ -314,6 +321,17 @@ h5 {
 #check_menu:checked~.svc {
     display: none;
 }
+
+.contacto{
+    display: inline-block;
+    margin: 10px;
+    width: 60%;
+}
+
+.contactoo {
+    width: 100%;
+}
+
 
 
 /* media queries */
@@ -436,14 +454,23 @@ h5 {
     .formulario {
         height: 40%;
     }
+    .contacto{
+        height: 40%;
+    }
 }
 @media (max-width: 913px){
     .formulario{
         height: 55%;
     }
+    .contacto{
+        height: 55%;
+    }
 }
 @media (max-width: 527px){
     .formulario{
+        height: 65%;
+    }
+    .contacto{
         height: 65%;
     }
 }

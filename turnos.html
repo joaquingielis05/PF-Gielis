@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- Boxicons CSS -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="./css/style.css">
     <title>JG Hair Studio</title>
@@ -14,14 +18,14 @@
 <body>
     <!-- Barra nav -->
     <nav class="navegacion">
-        <div class="logo_container">
+        <div class="logo_container animate__animated animate__fadeIn">
             <img src="./assets/img/logo.png" alt="logoJG" class="logo">
             <span>JG Hair Studio</span>
         </div>
         <!-- menu mobile -->
         <input type="checkbox" id="check_menu">
         
-        <ul class="navegacionNav">
+        <ul class="navegacionNav animate__animated animate__fadeIn">
             <li class="navegacionItem"><a class="colorNav" href="./index.html">Inicio</a></li>
             <li class="navegacionItem"><a class="colorNav" href="./servicios.html">Servicios</a></li>
             <li class="navegacionItem"><a class="colorNav" href="./productos.html">Productos</a></li>
@@ -33,7 +37,7 @@
 
     <!-- Agenda tu turno -->
     <header>
-      <img class="agendaTuTurno" src="./assets/img/agendaTuTurno.png" alt="agendaTuTurno">
+      <img class="agendaTuTurno animate__animated animate__fadeIn" src="./assets/img/agendaTuTurno.png" alt="agendaTuTurno">
     </header>
 
     <!-- Formulario -->
@@ -96,5 +100,10 @@
 <!-- Bootstrap JS -->
 <script src="./js/popper.js"></script>
 <script src="./js/bootstrap.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
