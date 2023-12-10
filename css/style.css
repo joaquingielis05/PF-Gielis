@@ -236,18 +236,18 @@ section.pieDePagina {
     padding: 1% 1%;
 }
 
-.servicio {
-    margin-top: 10%;
-}
 
 .solicitar {
     background-color: #524829;
     margin-top: 1%;
+    border-color: #524829;
 }
 
 .solicitar:hover {
-    background-color: #bca65e;
+    background-image: radial-gradient(circle, #bca65e, #a08d50, #857543, #6b5e36, #524829);
+    border-color: #bca65e;
 }
+
 
 .seccionTurnos {
     display: flex;
@@ -258,13 +258,23 @@ section.pieDePagina {
     margin-left: 1%;
 }
 
-.galeriaTexto {
-    color: white;
-    font-family: LinLibertine_RB;
-} 
+.servicio {
+    font-family: LinLibertine_R;
+    transition: all .42s;
+    position: static;
+    margin: 5px;
+    border-color: #524829;
+}
 
-.serviciosTamano {
-    height: 730px;
+.servicio:hover {
+    transform: scale(1.017);
+    position: static;
+}
+
+.servicioBody {
+    background-color: #141414;
+    color: white;
+
 }
 
 .productos {
@@ -285,13 +295,11 @@ section.pieDePagina {
     font-family: LinLibertine_R;
     transition: all .42s;
     display: flex;
-    
-
+    position: static;
 }
 
 .tarjeta:hover {
     transform: scale(1.025);
-    
 }
 
 h5 {
@@ -301,6 +309,10 @@ h5 {
 
 .comprar {
     font-family: LinLibertine_R;
+}
+
+#check_menu:checked~.svc {
+    display: none;
 }
 
 
@@ -393,6 +405,7 @@ h5 {
     }
 }
 
+
 @media (max-width: 1051px){
     .grid {
         display: flex;
@@ -434,24 +447,7 @@ h5 {
         height: 65%;
     }
 }
-@media (max-width: 1080px){
-    .serviciosTamano {
-        height: 70%;
-    }
-}
 
-@media (max-width: 900px){
-    .serviciosTamano {
-        height: 100%;
-    }
-}
-@media (max-width: 575px){
-    .serviciosTamano {
-        width: 100%;
-        height: 100%;
-        
-    }
-}
 
 @media (max-width: 1513px){
     .productosImg {

@@ -31,57 +31,51 @@
         <label class="colorNav" for="check_menu"><i class="bx bx-menu"></i></label>
     </nav>
 
- <section>
-    <div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <ul class="carousel-indicators">
-        <li data-bs-target="#carouselDark" data-bs-slide-to="0" class=""></li>
-        <li data-bs-target="#carouselDark" data-bs-slide-to="1" class=""></li>
-        <li data-bs-target="#carouselDark" data-bs-slide-to="2" class="active" aria-current="true"></li>
-        <li data-bs-target="#carouselDark" data-bs-slide-to="3" class="active" aria-current="true"></li>
-      </ul>
-      <div class="carousel-inner">
-        <div class="carousel-item serviciosTamano">
-          <img src="./assets/img/corte.png" class="d-block w-100" alt="Slide 1">
-          <div class="carousel-caption d-none d-sm-block">
-            <h1 class="galeriaTexto">Corte</h1>
-            <p class="galeriaTexto">$10 USD</p>
-          </div>
-        </div>
-        <div class="carousel-item serviciosTamano">
-          <img src="./assets/img/barba.png" class="d-block w-100" alt="Slide 2">
-          <div class="carousel-caption d-none d-sm-block">
-            <h1 class="galeriaTexto">Barba</h1>
-            <p class="galeriaTexto">$5 USD</p>
-            <p class="galeriaTexto">Corte + Barba $12 USD</p>
-          </div>
-        </div>
-        <div class="carousel-item active serviciosTamano">
-          <img src="./assets/img/tintura.png" class="d-block w-100" alt="Slide 3">
-          <div class="carousel-caption d-none d-sm-block">
-            <h1 class="galeriaTexto">Tintura</h1>
-            <p class="galeriaTexto">$20 USD</p>
-            <p class="galeriaTexto">Corte + Tintura $25 USD</p>
-          </div>
-        </div>
-        <div class="carousel-item serviciosTamano">
-          <img src="./assets/img/skincare.png" class="d-block w-100" alt="Slide 1">
-          <div class="carousel-caption d-none d-sm-block">
-            <h1 class="galeriaTexto">Limpieza de cutis</h1>
-            <p class="galeriaTexto">$15 USD</p>
-            <p class="galeriaTexto">Limpieza + Corte $20USD</p>
+    <!-- Servicios -->
+    <div class="row row-cols-1 row-cols-sm-2 g-3">
+      <div class="col">
+        <div class="card servicio">
+          <img src="./assets/img/corte.png" class="card-img-top" alt="corte">
+          <div class="card-body servicioBody">
+            <h5 class="card-title">Corte</h5>
+            <p class="card-text">$10 USD</p>
+            <p>INCLUYE PROMOCIONES</p>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselDark" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselDark" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </a>
+      <div class="col">
+        <div class="card servicio">
+          <img src="./assets/img/barba.png" class="card-img-top" alt="barba">
+          <div class="card-body servicioBody">
+            <h5 class="card-title">Barba</h5>
+            <p class="card-text">$5 USD</p>
+            <p>Corte + Barba $12 USD</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card servicio">
+          <img src="./assets/img/tintura.png" class="card-img-top" alt="tintura">
+          <div class="card-body servicioBody">
+            <h5 class="card-title">Tintura</h5>
+            <p class="card-text">$20 USD</p>
+            <p>Corte + Tintura $25 USD</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card servicio">
+          <img src="./assets/img/skincare.png" class="card-img-top" alt="skincare">
+          <div class="card-body servicioBody">
+            <h5 class="card-title">Limpieza de cutis</h5>
+            <p class="card-text">$15 USD</p>
+            <p>Limpieza + Corte $20USD</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+
+    <!-- Footer -->
     <footer>
         <section class="pieDePagina">
             <h1>NUESTRAS REDES</h1>
