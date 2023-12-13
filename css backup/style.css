@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "LinLibertine_R";
+    src: url(../font/LinLibertine_R.ttf);
+}
+
+@font-face {
+    font-family: "LinLibertine_RB";
+    src: url(../font/LinLibertine_RB.ttf);
+}
+
+html, body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 20px;
+    font-family: LinLibertine_R;
+}
+
+
+h1 {
+    font-size: 34px;
+    font-family: LinLibertine_RB;
+    margin-bottom: 10px;
+}
+
+
+*::selection {
+    background-color: #524829;
+}
+
+nav.navegacion {
+    width: 100%;
+    height: 90px;
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    font-family: LinLibertine_RB;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.logo {
+    width: 60px;
+}
+
+.navegacion .logo_container {
+    padding: 0 10px;
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.header {
+    width: 100%;   
+}
+
+
+
+
+.navegacionNav .navegacionItem {
+    margin: 25px;
+    align-items: center;
+}
+
+.navegacionItem:hover {
+    text-decoration: underline;
+}
+
+
+
+.navegacionNav {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorNav {
+    color: #bca65e;
+    text-decoration: none;
+}
+
+/* menu mobile */
+#check_menu, .navegacion label {
+    display: none;
+}
+
+.nosotros {
+    margin: 25px;
+    
+    color: white;
+    width: 40%;
+    display: inline-block;
+}
+
+.aca {
+    color: #bca65e;
+    text-decoration: none;
+}
+
+.aca:hover {
+    text-decoration: underline;
+}
+
+.mapa {
+    display: flex;
+    width: 40%;
+    margin: 10px;
+    justify-content: right;
+    
+}
+
+.nosotrosMapa {
+    display: flex;
+    
+}
+
+iframe {
+    width: 450px;
+    height: 300px;
+}
+
+.barberos {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.nuestrosBarberos {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.barberosImg {
+    width: 350px;
+    margin: 25px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black
+}
+
+.nombreBarbero {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.barberos123 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    background-color: white;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+footer {
+    background-color: #141414;
+    color: white;
+}
+
+section.pieDePagina {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pieDePagina .icono {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icono a i.bx {
+    margin-right: 20px;
+    font-size: 2.0rem;
+    color: white;
+}
+
+.icono a i.bx:hover {
+    color: #bca65e;
+}
+
+.iconos {
+    display: flex;
+}
+
+.agendaTuTurno {
+    width: 100%;
+}
+
+.formulario {
+    background-color: black;
+    font-family: LinLibertine_R;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1% 1%;
+}
+
+
+.solicitar {
+    background-color: #524829;
+    margin-top: 1%;
+    border-color: #524829;
+    transition: all .5s;
+}
+
+.solicitar:hover {
+    background-image: radial-gradient(circle, #bca65e, #a08d50, #857543, #6b5e36, #524829);
+    border-color: #bca65e;
+    transition: all .5s;
+}
+
+
+.seccionTurnos {
+    display: flex;
+    flex-direction: row;
+}
+
+.fecha {
+    margin-left: 1%;
+}
+
+
+.servicio {
+    font-family: LinLibertine_R;
+    transition: all .42s;
+    position: static;
+    margin: 5px;
+    border-color: #524829;
+}
+
+.servicio:hover{
+    transform: scale(1.017);
+    .servicioBody{
+        color: #bca65e;
+    }
+}
+
+
+
+.servicioBody {
+    background-color: #141414;
+    color: white;
+}
+
+
+.productos {
+    display:flex;
+    margin: 1%;
+    justify-content:center
+}
+
+
+.productosImg {
+    height: 400px;
+    width: 400px;
+}
+
+.tarjeta {
+    width: 30%;
+    margin: 5px;
+    font-family: LinLibertine_R;
+    transition: all .42s;
+    display: flex;
+    position: static;
+}
+
+.tarjeta:hover {
+    transform: scale(1.025);
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.comprar {
+    font-family: LinLibertine_R;
+}
+
+#check_menu:checked~.svc {
+    display: none;
+}
+
+.contacto{
+    display: inline-block;
+    margin: 10px;
+    width: 60%;
+}
+
+.contactoo {
+    width: 100%;
+}
+
+
+
+/* media queries */
+@media (max-width: 1230px){
+    nav.navegacion {
+        width: 100%;
+        height: 80px;
+        background-color: #141414;
+        position: sticky;
+        top: 0;
+        font-family: LinLibertine_RB;
+        font-size: 17px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .barberosImg {
+        width: 300px;
+    }
+}
+@media (max-width: 1058px){
+    nav.navegacion {
+        width: 100%;
+        height: 70px;
+        background-color: #141414;
+        position: sticky;
+        top: 0;
+        font-family: LinLibertine_RB;
+        font-size: 15px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+}
+@media (max-width: 970px){
+    nav.navegacion {
+        width: 100%;
+        height: 65px;
+        background-color: #141414;
+        position: sticky;
+        top: 0;
+        font-family: LinLibertine_RB;
+        font-size: 13px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .barberosImg {
+        width: 300px;
+    }
+}
+@media (max-width: 905px){
+    .navegacionNav {
+        display: flex;
+        list-style: none;
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 594px){
+    .navegacion label {
+        display: block;
+    }
+    .navegacionNav {
+        display: none;
+    }
+
+    #check_menu:checked~.navegacionNav{
+        display: flex;
+        background: #141414;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .navegacion .logo_container {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 1051px){
+    .grid {
+        display: flex;
+        flex-direction: column;
+        height: 1735px;
+    }
+}
+
+@media (max-width: 655px){
+    h1 {
+        font-size: 27px;
+    }
+    p{
+        15px
+    }
+    .nosotrosMapa {
+        flex-direction: column;
+    }
+    .nosotros {
+        width: 80%;
+    }
+    .mapa {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1114px){
+    .formulario {
+        height: 40%;
+    }
+    .contacto{
+        height: 40%;
+    }
+}
+@media (max-width: 913px){
+    .formulario{
+        height: 55%;
+    }
+    .contacto{
+        height: 55%;
+    }
+}
+@media (max-width: 527px){
+    .formulario{
+        height: 65%;
+    }
+    .contacto{
+        height: 65%;
+    }
+}
+
+
+@media (max-width: 1513px){
+    .productosImg {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 1474px){
+    .productosImg {
+        height: 300px;
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 1292px){
+    .productosImg {
+        height: 250px;
+        width: 250px;
+    }
+    .tarjeta{
+        width: 25%;
+        height: 720px;
+    }
+}
+
+@media (max-width: 1134px){
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tarjeta {
+        width: 450px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 929px){
+    .tarjeta {
+        width: 400px;
+        height: 590px;
+    }
+}
+
+@media (max-width: 827px){
+    .tarjeta {
+        width: 350px;
+        height: 540px;
+    }
+    p {
+        font-size: 15px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 723px){
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
