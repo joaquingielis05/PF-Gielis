@@ -23,13 +23,13 @@ h1 {
 }
 
 *::selection {
-    background-color: $color2;
+    background-color: map-get($map: $paleta, $key: 'color2');
 }
 
 .navegacion {
     width: 100%;
     height: 90px;
-    background-color: $color3;
+    background-color: map-get($map: $paleta, $key: 'color3');
     position: sticky;
     top: 0;
     font-family: $fuente2;
@@ -64,7 +64,7 @@ h1 {
             text-decoration: underline;
         }
         .colorNav {
-            color: $color1;
+            color: map-get($map: $paleta, $key: 'color1');
             text-decoration: none;
         }
     }
@@ -96,7 +96,7 @@ h1 {
 }
 
 .aca {
-    color: $color1;
+    color: map-get($map: $paleta, $key: 'color1');
     text-decoration: none;
     &:hover {
         text-decoration: underline;
@@ -156,8 +156,9 @@ iframe {
 }
 
 footer {
-    background-color: $color3;
+    background-color: map-get($map: $paleta, $key: 'color3');
     color: white;
+    z-index: 999;
     .pieDePagina {
         width: 100%;
         height: 150px;
@@ -177,7 +178,7 @@ footer {
                     font-size: 2.0rem;
                     color: white;
                     &:hover {
-                        color: $color1;
+                        color: map-get($map: $paleta, $key: 'color1');
                     }
                 }
             }
@@ -207,13 +208,13 @@ footer {
 }
 
 .solicitar {
-    background-color: $color2;
+    background-color: map-get($map: $paleta, $key: 'color2');
     margin-top: 1%;
-    border-color: $color2;
+    border-color: map-get($map: $paleta, $key: 'color2');
     transition: all .5s;
     &:hover {
         background-image: radial-gradient(circle, #bca65e, #a08d50, #857543, #6b5e36, #524829);
-        border-color: $color1;
+        border-color: map-get($map: $paleta, $key: 'color1');
         transition: all .5s;
     }
 }
@@ -223,15 +224,15 @@ footer {
     transition: all .42s;
     position: static;
     margin: 5px;
-    border-color: $color2;
+    border-color: map-get($map: $paleta, $key: 'color2');
     &:hover{
         transform: scale(1.017);
         .servicioBody{
-            color: $color1;
+            color: map-get($map: $paleta, $key: 'color1');
         }
     }
     .servicioBody {
-        background-color: $color3;
+        background-color: map-get($map: $paleta, $key: 'color3');
         color: white;
     }
 
@@ -270,6 +271,11 @@ footer {
 
 .contactoo {
     width: 100%;
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 @import "./partials/queries";
