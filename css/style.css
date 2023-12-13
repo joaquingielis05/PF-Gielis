@@ -437,7 +437,7 @@ h5 {
         font-size: 27px;
     }
     p{
-        15px
+        font-size: 15px;
     }
     .nosotrosMapa {
         flex-direction: column;
