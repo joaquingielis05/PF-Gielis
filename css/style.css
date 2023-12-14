@@ -58,6 +58,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  z-index: 1000;
 }
 .navegacion .logo_container .logo {
   width: 60px;
