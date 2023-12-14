@@ -98,6 +98,7 @@ h1 {
 .aca {
     color: map-get($map: $paleta, $key: 'color1');
     text-decoration: none;
+    font-family: $fuente2;
     &:hover {
         text-decoration: underline;
     }
@@ -303,6 +304,10 @@ footer {
 h5 {
     font-size: 25px;
     font-weight: bold;
+}
+
+.error {
+    margin: 10px
 }
 
 @import "./partials/queries";

@@ -58,7 +58,6 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  z-index: 1000;
 }
 .navegacion .logo_container .logo {
   width: 60px;
@@ -110,6 +109,7 @@ h1 {
 .aca {
   color: #bca65e;
   text-decoration: none;
+  font-family: "LinLibertine_RB";
 }
 .aca:hover {
   text-decoration: underline;
@@ -312,6 +312,10 @@ h5 {
   font-weight: bold;
 }
 
+.error {
+  margin: 10px;
+}
+
 /* media queries */
 @media (max-width: 1230px) {
   nav.navegacion {
@@ -501,118 +505,4 @@ h5 {
   }
 }
 
-@media (max-width: 1051px){
-    .grid {
-        display: flex;
-        flex-direction: column;
-        height: 1735px;
-    }
-}
-
-@media (max-width: 655px){
-    h1 {
-        font-size: 27px;
-    }
-    p{
-        font-size: 15px;
-    }
-    .nosotrosMapa {
-        flex-direction: column;
-    }
-    .nosotros {
-        width: 80%;
-    }
-    .mapa {
-        width: 80%;
-    }
-}
-
-@media (max-width: 1114px){
-    .formulario {
-        height: 40%;
-    }
-    .contacto{
-        height: 40%;
-    }
-}
-@media (max-width: 913px){
-    .formulario{
-        height: 55%;
-    }
-    .contacto{
-        height: 55%;
-    }
-}
-@media (max-width: 527px){
-    .formulario{
-        height: 65%;
-    }
-    .contacto{
-        height: 65%;
-    }
-}
-
-
-@media (max-width: 1513px){
-    .productosImg {
-        height: 350px;
-        width: 350px;
-    }
-}
-
-@media (max-width: 1474px){
-    .productosImg {
-        height: 300px;
-        width: 300px;
-    }
-
-}
-
-@media (max-width: 1292px){
-    .productosImg {
-        height: 250px;
-        width: 250px;
-    }
-    .tarjeta{
-        width: 25%;
-        height: 720px;
-    }
-}
-
-@media (max-width: 1134px){
-    .productos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .tarjeta {
-        width: 450px;
-        height: 600px;
-    }
-}
-
-@media (max-width: 929px){
-    .tarjeta {
-        width: 400px;
-        height: 590px;
-    }
-}
-
-@media (max-width: 827px){
-    .tarjeta {
-        width: 350px;
-        height: 540px;
-    }
-    p {
-        font-size: 15px;
-    }
-    h5 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 723px){
-    .productos {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
+/*# sourceMappingURL=style.css.map */
