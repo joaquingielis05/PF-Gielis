@@ -134,6 +134,17 @@ iframe {
     align-content: center;
     justify-content: center;
     width: 30%;
+    transition: all .42s;
+    &:hover{
+        
+            transform: scale(1.030);
+            transition: all .42s;
+            .barberosImg{
+                box-shadow: 5px 5px 50px map-get($map: $paleta, $key:'color2' )
+            }
+            
+        }
+    
 }
 
 .barberosImg {
@@ -141,6 +152,7 @@ iframe {
     margin: 25px;
     border-radius: 15px;
     box-shadow: 1px 1px 10px black
+    
 }
 
 .nombreBarbero {
@@ -242,21 +254,27 @@ footer {
     display:flex;
     margin: 1%;
     justify-content:center;
-    .tarjeta {
-        width: 30%;
-        margin: 5px;
-        font-family: $fuente1;
-        transition: all .42s;
-        display: flex;
-        position: static;
-        .productosImg {
-            height: 400px;
-            width: 400px;
-        }
-        .comprar {
-            font-family: $fuente1;
-        }
+}
+
+.tarjeta {
+    width: 30%;
+    margin: 5px;
+    font-family: $fuente1;
+    transition: all .42s;
+    display: flex;
+    position: static;
+    &:hover {
+        transform: scale(1.025);
     }
+}
+
+.comprar {
+    font-family: $fuente1;
+}
+
+.productosImg {
+    height: 400px;
+    width: 400px;
 }
 
 #check_menu:checked~.svc {
@@ -267,6 +285,15 @@ footer {
     display: inline-block;
     margin: 10px;
     width: 60%;
+}
+
+.separacion {
+    margin-top: 10px;
+}
+
+.msj{
+    width: 250px;
+    height: 80px;
 }
 
 .contactoo {

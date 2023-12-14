@@ -145,6 +145,14 @@ iframe {
   align-content: center;
   justify-content: center;
   width: 30%;
+  transition: all 0.42s;
+}
+.barberos:hover {
+  transform: scale(1.03);
+  transition: all 0.42s;
+}
+.barberos:hover .barberosImg {
+  box-shadow: 5px 5px 50px #524829;
 }
 
 .barberosImg {
@@ -253,7 +261,8 @@ footer .pieDePagina .iconos .icono a i.bx:hover {
   margin: 1%;
   justify-content: center;
 }
-.productos .tarjeta {
+
+.tarjeta {
   width: 30%;
   margin: 5px;
   font-family: "LinLibertine_R";
@@ -261,12 +270,17 @@ footer .pieDePagina .iconos .icono a i.bx:hover {
   display: flex;
   position: static;
 }
-.productos .tarjeta .productosImg {
+.tarjeta:hover {
+  transform: scale(1.025);
+}
+
+.comprar {
+  font-family: "LinLibertine_R";
+}
+
+.productosImg {
   height: 400px;
   width: 400px;
-}
-.productos .tarjeta .comprar {
-  font-family: "LinLibertine_R";
 }
 
 #check_menu:checked ~ .svc {
@@ -277,6 +291,15 @@ footer .pieDePagina .iconos .icono a i.bx:hover {
   display: inline-block;
   margin: 10px;
   width: 60%;
+}
+
+.separacion {
+  margin-top: 10px;
+}
+
+.msj {
+  width: 250px;
+  height: 80px;
 }
 
 .contactoo {
