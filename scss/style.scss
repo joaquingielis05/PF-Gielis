@@ -1,0 +1,308 @@
+@import "./partials/reset";
+@import "./partials/variables";
+
+html, body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 20px;
+    font-family: $fuente1;
+}
+
+h1 {
+    font-size: 34px;
+    font-family: $fuente2;
+    margin-bottom: 10px;
+}
+
+*::selection {
+    background-color: map-get($map: $paleta, $key: 'color2');
+}
+
+.navegacion {
+    width: 100%;
+    height: 90px;
+    background-color: map-get($map: $paleta, $key: 'color3');
+    position: sticky;
+    top: 0;
+    font-family: $fuente2;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    .logo_container{
+        padding: 0 10px;
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .logo{
+        width: 60px;
+    }
+    }
+    .navegacionNav {
+        display: flex;
+        list-style: none;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        .navegacionItem {
+            margin: 25px;
+            align-items: center;
+        }
+        .navegacionItem:hover {
+            text-decoration: underline;
+        }
+        .colorNav {
+            color: map-get($map: $paleta, $key: 'color1');
+            text-decoration: none;
+        }
+    }
+}
+/* menu mobile */
+#check_menu, .navegacion label {
+    display: none;
+}
+
+.header {
+    width: 100%;   
+}
+
+.nosotrosMapa {
+    display: flex;
+    .nosotros {
+        margin: 25px;    
+        color: white;
+        width: 40%;
+        display: inline-block;   
+    }
+    .mapa {
+        display: flex;
+        width: 40%;
+        margin: 10px;
+        justify-content: right;
+        
+    }
+}
+
+.aca {
+    color: map-get($map: $paleta, $key: 'color1');
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+iframe {
+    width: 450px;
+    height: 300px;
+}
+
+.nuestrosBarberos {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.grid {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    background-color: white;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.barberos {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+    transition: all .42s;
+    &:hover{
+        
+            transform: scale(1.030);
+            transition: all .42s;
+            .barberosImg{
+                box-shadow: 5px 5px 50px map-get($map: $paleta, $key:'color2' )
+            }
+            
+        }
+    
+}
+
+.barberosImg {
+    width: 350px;
+    margin: 25px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black
+    
+}
+
+.nombreBarbero {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.barberos123 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: map-get($map: $paleta, $key: 'color3');
+    color: white;
+    z-index: 999;
+    .pieDePagina {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .iconos {
+            display: flex;
+            .icono {
+                color: white;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                a i.bx {
+                    margin-right: 20px;
+                    font-size: 2.0rem;
+                    color: white;
+                    &:hover {
+                        color: map-get($map: $paleta, $key: 'color1');
+                    }
+                }
+            }
+        }
+    }
+}
+
+.agendaTuTurno {
+    width: 100%;
+}
+
+.formulario {
+    background-color: black;
+    font-family: $fuente1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1% 1%;
+    .seccionTurnos {
+        display: flex;
+        flex-direction: row;
+        .fecha {
+            margin-left: 1%;
+        }
+    }
+}
+
+.solicitar {
+    background-color: map-get($map: $paleta, $key: 'color2');
+    margin-top: 1%;
+    border-color: map-get($map: $paleta, $key: 'color2');
+    transition: all .5s;
+    &:hover {
+        background-image: radial-gradient(circle, #bca65e, #a08d50, #857543, #6b5e36, #524829);
+        border-color: map-get($map: $paleta, $key: 'color1');
+        transition: all .5s;
+    }
+}
+
+.servicio {
+    font-family: $fuente1;
+    transition: all .42s;
+    position: static;
+    margin: 5px;
+    border-color: map-get($map: $paleta, $key: 'color2');
+    &:hover{
+        transform: scale(1.017);
+        .servicioBody{
+            color: map-get($map: $paleta, $key: 'color1');
+        }
+    }
+    .servicioBody {
+        background-color: map-get($map: $paleta, $key: 'color3');
+        color: white;
+    }
+
+}
+
+.productos {
+    display:flex;
+    margin: 1%;
+    justify-content:center;
+}
+
+.tarjeta {
+    width: 30%;
+    margin: 5px;
+    font-family: $fuente1;
+    transition: all .42s;
+    display: flex;
+    position: static;
+    &:hover {
+        transform: scale(1.025);
+    }
+}
+
+.comprar {
+    font-family: $fuente1;
+}
+
+.productosImg {
+    height: 400px;
+    width: 400px;
+}
+
+#check_menu:checked~.svc {
+    display: none;
+}
+
+.contacto{
+    display: inline-block;
+    margin: 10px;
+    width: 60%;
+}
+
+.separacion {
+    margin-top: 10px;
+}
+
+.msj{
+    width: 250px;
+    height: 80px;
+}
+
+.contactoo {
+    width: 100%;
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@import "./partials/queries";
